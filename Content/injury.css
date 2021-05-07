@@ -1,0 +1,244 @@
+:root {
+    --background-color-main: #52c596;
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    --body-background: #f2f3f5;
+}
+
+#injury .img_side {
+    background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/sideCircle.png");
+    height: 600px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*position: absolute;*/
+    background-attachment: local;
+    background-position: center;
+}
+
+#injury .img_back {
+    background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/backCircle.png");
+    height: 600px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*position: absolute;*/
+    background-attachment: local;
+    background-position: center;
+}
+
+#injury .img_front {
+    background-image: url("https://ieimage.s3-ap-southeast-2.amazonaws.com/frontCircle.png");
+    height: 600px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*position: absolute;*/
+    background-attachment: local;
+    background-position: center;
+}
+
+#injury .info_icon_saddle {
+    position: relative;
+    top: 30%;
+    left: 60%;
+}
+
+#injury .info_icon_backofLeg {
+    position: relative;
+    top: 36%;
+    left: 55%;
+}
+
+#injury .info_icon_calfPain {
+    position: relative;
+    top: 46%;
+    left: 40%;
+}
+
+#injury .info_icon_posteriorKneePain {
+    position: relative;
+    top: 48%;
+    left: 53%;
+}
+
+#injury .info_icon_achillesPain {
+    position: relative;
+    top: 62%;
+    left: 53%;
+}
+
+#injury .info_icon_footPain {
+    position: relative;
+    top: 43%;
+    left: 52%;
+}
+
+#injury .info-icon_neckPain {
+    position: relative;
+    top: -15%;
+    left: 44%;
+}
+
+#injury .info-icon_sholderPain {
+    position: relative;
+    top: 10%;
+    left: 40%;
+}
+
+#injury .info-icon_backPain {
+    position: relative;
+    top: 5%;
+    left: 45%;
+}
+
+#injury .info-icon_handPressure {
+    position: relative;
+    top: 36%;
+    left: 35%;
+}
+
+
+#injury .info-icon_anteriorKneePain {
+    position: relative;
+    top: 26%;
+    left: 56%;
+}
+
+#injury .info-icon2 {
+    position: relative;
+    top: 5%;
+    left: 97%;
+}
+
+#injury .img_hover .fa-icon {
+    /*font-size: 99px;*/
+    /*color: greenyellow;*/
+    color: #ff6a00;
+    -webkit-animation: breathing 0.3s infinite;
+    animation: breathing 0.3s infinite;
+}
+
+@-webkit-keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    25% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+@keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    25% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+#injury .info-window {
+    opacity: 0;
+    transition: 0.7s;
+    font-size: 1.3em;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px 8px;
+    position: relative;
+    display: inline-block;
+    min-height: 53px;
+    vertical-align: middle;
+}
+
+#injury .fa-icon:hover,
+#injury .fa-icon.hover {
+    font-size: 30px;
+    
+}
+
+#injury .fa-icon:hover + .info-window,
+#injury .fa-icon.hover + .info-window {
+    opacity: 0.8;
+    z-index: 99;
+}
+
+
+#wrap {
+    word-break: keep-all;
+    width: 200px;
+}
+
+
+/* modify */
+
+#injury .injury-section-desc {
+    padding: .3em;
+}
+
+#injury .injury-section-desc.active,
+#injury .injury-section-desc:hover {
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+    transition: all ease-in-out 0.3s;
+}
+
+#injury .injury-section-desc .title {
+    color: var(--background-color-main);
+    font-weight: bold;
+}
+
+#injury .injury-section-desc ul li {
+    list-style-type: initial;
+    margin-left: 1.5em;
+    font-weight: bold;
+}
+
+#injury .img_hover i {
+    padding: 5px;
+    border-radius: 20px;
+    background: rgba(255,255,255, 0.6);
+}
+
+
+#injury .injury-section-desc a {
+    background: transparent;
+    color: var(--background-color-main);
+    transition: none;
+}
+#injury .injury-section-desc a.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--background-color-main);
+}

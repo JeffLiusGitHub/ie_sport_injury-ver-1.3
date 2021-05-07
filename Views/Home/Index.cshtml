@@ -1,0 +1,116 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    ViewBag.BodyStyle = "";
+}
+    <script type="text/javascript">loopy()
+    function loopy() {
+        var sWord = ""
+        while (sWord != "29") {
+            sWord = prompt("Please enter password")
+        }
+        alert("Welcome")
+    }</script>
+
+    <section id="home" class="main-banner parallaxie" style="background: url('/Content/images/bg2.jpg')">
+        <div class="heading">
+            <h1>Say no to injuries</h1>
+            <h3 class="cd-headline clip is-full-width">
+                <span>Cycling </span>
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">Safest</b>
+                    <b>Healthiest</b>
+                </span>
+                <div class="btn-ber">
+                    <a class="get_btn btn-hover-new" href="@Url.Action("Index", "Education")">Learn More</a>
+                    <!--<a class="learn_btn hvr-bounce-to-top" href="#">Cycling Map</a>-->
+                </div>
+            </h3>
+        </div>
+    </section>
+
+    <div id="services" class="section lb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Sportsaholics</h3>
+                <p>Start your cycling journey.</p>
+            </div>
+            <!-- end title -->
+
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="@Url.Action("Index", "Education")">
+                        <div class="services-inner-box">
+                            <div class="ser-icon">
+                                <i class="flaticon-books"></i>
+                            </div>
+                            <h2>Education</h2>
+                            <p>Things you need to know before riding your bicycle.</p>
+                        </div>
+                    </a>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <a href="@Url.Action("Index", "InjuryHover")">
+                        <div class="services-inner-box">
+                            <div class="ser-icon">
+                                <i class="flaticon-bandage"></i>
+                            </div>
+                            <h2>Common Injuries</h2>
+                            <p>
+                                Get to know the causes of common cycling injuries.
+                            </p>
+                        </div>
+                    </a>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <a href="@Url.Action("Index", "NavigationMap")">
+                        <div class="services-inner-box">
+                            <div class="ser-icon">
+                                <i class="flaticon-map"></i>
+                            </div>
+                            <h2>Navigation Map</h2>
+                            <p>
+                                Get the safest path to your destination and visualize the bike lanes in the city.
+                            </p>
+                        </div>
+                    </a>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <a href="@Url.Action("Index", "QuizIndex")">
+                        <div class="services-inner-box">
+                            <div class="ser-icon">
+                                <i class="flaticon-exam-1"></i>
+                            </div>
+                            <h2>Trivia</h2>
+                            <p>Test your knowledge of bicycle equipment and road rules.</p>
+                        </div>
+                    </a>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <a href="@Url.Action("Index", "Analysis")">
+                        <div class="services-inner-box">
+                            <div class="ser-icon">
+                                <i class="flaticon-computer"></i>
+                            </div>
+                            <h2>Crash: When & Where</h2>
+                            <p>
+                                Visualize the safest time and days of week for riding in top 10 crash prone cities of Victoria.
+                            </p>
+                        </div>
+                    </a>
+                </div><!-- end col -->
+                <div class="col-md-4">
+                    <a href="@Url.Action("Index", "Map")">
+                        <div class="services-inner-box">
+                            <div class="ser-icon">
+                                <i class="flaticon-gps"></i>
+                            </div>
+                            <h2>Crash Map</h2>
+                            <p>This map shows all the bicycle crashes that happened across Victoria from 2013 to 2019. </p>
+                        </div>
+                    </a>
+                </div><!-- end col -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
